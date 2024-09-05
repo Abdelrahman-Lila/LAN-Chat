@@ -12,3 +12,4 @@ client, client_address = my_socket.accept()
 while True:
     message = client.recv(1024)
     print(message.decode())
+    client.send("Message recieved !".encode())
