@@ -9,6 +9,6 @@ my_socket.bind((ADDRESS, PORT))
 my_socket.listen()
 client, client_address = my_socket.accept()
 
-message = client.recv(1024)
-
-print(message.decode())
+while True:
+    message = client.recv(1024)
+    print(message.decode())

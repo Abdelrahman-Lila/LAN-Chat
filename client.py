@@ -6,4 +6,6 @@ PORT = 9000
 ADDRESS = "localhost"
 my_socket.connect((ADDRESS, PORT))
 
-my_socket.send("The message you want to send".encode())
+while True:
+    message_to_send = input("Enter your message: ")
+    my_socket.send(message_to_send.encode())
