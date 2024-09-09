@@ -164,3 +164,7 @@ cython_debug/
 # files directory
 files/
 files/**/*
+
+# Output directory
+output/
+output/**/*
